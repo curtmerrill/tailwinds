@@ -1,0 +1,48 @@
+.homepage-header {
+    background-color: $brand;
+    color: $white;
+    margin: 0;
+
+    & > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    & h1 {
+        font-size: 1.4rem;
+        letter-spacing: .02em;
+        & > a {
+            text-decoration: none;
+        }
+    }
+
+    & a {
+        color: $white;
+    }
+
+}
+
+.site-footer {
+    & > .container {
+        color: $subtle;
+        text-align: center;
+        font-size: .875rem;
+        margin-top: 2rem;
+    }
+}
+.copyright {
+
+}
+
+ul.links {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-left: 0;
+    display: block;
+    & > li {
+        display: inline-flex;
+    }
+}

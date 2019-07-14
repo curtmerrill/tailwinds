@@ -1,0 +1,36 @@
+$white: #fdfff2;
+$black: #011502;
+$brand: #13565b;
+$brand-light: #9ec5ab;
+$brand-dark: #01200f;
+$subtle: mix($brand-dark, $white, 60%);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    @media screen and (min-width: 670px) {
+        font-size: 20px;
+    }
+}
+
+body {
+    border-top: 4px $brand solid;
+    background-color: $white;
+    color: $black;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    width: 95%;
+    max-width: 35rem;
+    margin: 0 auto;
+
+    &.small {
+        max-width: 25rem;
+    }
+}
+
