@@ -389,6 +389,19 @@ body {
   color: #fdfff2;
 }
 
+.internal-header {
+  background-color: white;
+  border-bottom: 1px solid #9ec5ab;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+.internal-header > * {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .site-footer > .container {
   color: #66796a;
   text-align: center;

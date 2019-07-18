@@ -1,0 +1,12 @@
+<header class="internal-header">
+    <div class="container">
+        <div class="nav-links">
+            <a href="{% url 'new_entry' %}">Write</a>
+            <a href="{% url 'dashboard' %}">Dashboard</a>
+        </div>
+        <div class="login-buttons">
+            <b>{{ user.get_username }}</b>
+            <a href="{% url 'logout' %}">log out</a>
+        </div>
+    </div>
+</header>

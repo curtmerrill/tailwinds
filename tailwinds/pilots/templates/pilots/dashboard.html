@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block header %}{% include '../_internal-header.html' %}{% endblock %}
+
+{% block main %}
+<div class="container">
+<h1>Welcome</h1>
+<h2>You have {{ entry_list|length }} entries</h2>
+{% for entry in entry_list %}
+<p>{{ entry.created_at|date:"j M Y" }}</p>
+{% endfor %}
+</div>
+{% endblock %}
